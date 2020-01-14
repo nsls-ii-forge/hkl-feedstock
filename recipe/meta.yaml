@@ -21,7 +21,7 @@ requirements:
     - autoconf
     - automake
     - gobject-introspection
-    - gsl <2.4
+    - gsl
     - libtool
     - m4
     - pkg-config
@@ -31,7 +31,7 @@ requirements:
     - pip
   run:
     - python
-    - gsl <2.5
+    - gsl
     - libiconv
     - numpy
     - pcre
