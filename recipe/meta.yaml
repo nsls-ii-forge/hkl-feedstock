@@ -28,7 +28,6 @@ requirements:
     - pygobject
   host:
     - python
-    - pip
   run:
     - python
     - gsl
