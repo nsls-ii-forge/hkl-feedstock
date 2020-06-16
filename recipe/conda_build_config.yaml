@@ -2,11 +2,14 @@ channel_sources:
   - nsls2forge,defaults
 channel_targets:
   - nsls2forge main
-c_compiler_version:
-  - '4'  # [osx]
-cxx_compiler_version:
-  - '4'  # [osx]
-gsl:
-  - 2.4
-glib:
-  - 2.56
+# c_compiler_version:
+#   - '4'  # [osx]
+# cxx_compiler_version:
+#   - '4'  # [osx]
+# gsl:
+#   - 2.4
+# glib:
+#   - 2.56
+python:
+  - 3.6
+  - 3.7
