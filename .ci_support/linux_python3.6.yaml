@@ -3,7 +3,7 @@ c_compiler:
 c_compiler_version:
 - '7'
 channel_sources:
-- conda-forge,nsls2forge,defaults
+- nsls2forge,defaults
 channel_targets:
 - nsls2forge main
 cxx_compiler:
@@ -12,8 +12,12 @@ cxx_compiler_version:
 - '7'
 docker_image:
 - condaforge/linux-anvil-comp7
+glib:
+- '2.58'
 gsl:
 - '2.6'
+libcblas:
+- 3.8 *netlib
 pin_run_as_build:
   python:
     min_pin: x.x
