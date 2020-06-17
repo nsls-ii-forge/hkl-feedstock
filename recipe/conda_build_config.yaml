@@ -1,8 +1,7 @@
 channel_sources:
-  - nsls2forge,defaults
+  - conda-forge,nsls2forge,defaults
 channel_targets:
   - nsls2forge main
-c_compiler_version:
-  - '4'  # [osx]
-cxx_compiler_version:
-  - '4'  # [osx]
+python:
+  - 3.6
+  - 3.7
