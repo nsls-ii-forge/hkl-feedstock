@@ -9,10 +9,12 @@ package:
 source:
   url: https://github.com/picca/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - no-docs.patch
 
 build:
   number: 0
-  skip: True  # [py<36 or win]
+  skip: True  # [py<36 or win or osx]
 
 requirements:
   build:
@@ -20,13 +22,15 @@ requirements:
     - {{ compiler('cxx') }}
     - autoconf
     - automake
-    - gobject-introspection
-    - gsl
     - libtool
     - m4
     - pkg-config
-    - pygobject
   host:
+    - glib
+    - gobject-introspection
+    - gsl
+    - libcblas
+    - pygobject
     - python
   run:
     - python
@@ -36,10 +40,20 @@ requirements:
     - pcre
     - pygobject
 
+test:
+  commands:
+    - test -f ${PREFIX}/lib/libhkl.so
+    - test ! -f ${PREFIX}/lib/libhkl.a
+
 about:
   home: http://repo.or.cz/w/hkl.git
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_file: COPYING
   summary: Diffractometer computation library
   doc_url: https://people.debian.org/~picca/hkl/hkl.html
   dev_url: http://repo.or.cz/w/hkl.git
+
+extra:
+  recipe-maintainers:
+    - mrakitin
+    - prjemian
