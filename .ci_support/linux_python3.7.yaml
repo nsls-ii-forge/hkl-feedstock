@@ -3,7 +3,7 @@ c_compiler:
 c_compiler_version:
 - '7'
 channel_sources:
-- nsls2forge,defaults
+- conda-forge,nsls2forge,defaults
 channel_targets:
 - nsls2forge main
 cxx_compiler:
