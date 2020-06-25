@@ -11,5 +11,8 @@ aclocal --print-ac-dir
 autoreconf -ivf
 
 ./configure --disable-static --disable-gui --enable-introspection=yes --disable-hkl-doc --prefix=$PREFIX
+
+sed -i 's|python|'"$PYTHON"'|g' hkl/Makefile
+
 make -j ${CPU_COUNT}
 make install

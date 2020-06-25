@@ -26,18 +26,17 @@ requirements:
     - m4
     - pkg-config
   host:
+    - python
     - glib
     - gobject-introspection
     - gsl
-    - libcblas
+    - libiconv
+    - pcre
     - pygobject
-    - python
   run:
     - python
     - gsl
-    - libiconv
     - numpy
-    - pcre
     - pygobject
 
 test:

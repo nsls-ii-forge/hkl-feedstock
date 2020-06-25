@@ -1,5 +1,5 @@
 channel_sources:
-  - conda-forge,nsls2forge,defaults
+  - nsls2forge,defaults
 channel_targets:
   - nsls2forge main
 python:
