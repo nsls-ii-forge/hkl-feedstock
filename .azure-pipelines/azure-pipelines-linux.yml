@@ -16,6 +16,10 @@ jobs:
         CONFIG: linux_python3.7
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: nsls2/nsls2forge:latest
+      linux_python3.8:
+        CONFIG: linux_python3.8
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: nsls2/nsls2forge:latest
     maxParallel: 8
   timeoutInMinutes: 360
 

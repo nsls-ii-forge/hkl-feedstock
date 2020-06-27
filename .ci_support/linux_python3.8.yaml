@@ -1,0 +1,28 @@
+c_compiler:
+- gcc
+c_compiler_version:
+- '7'
+channel_sources:
+- nsls2forge,defaults
+channel_targets:
+- nsls2forge main
+cxx_compiler:
+- gxx
+cxx_compiler_version:
+- '7'
+docker_image:
+- nsls2/nsls2forge:latest
+glib:
+- '2.63'
+gsl:
+- '2.4'
+libiconv:
+- '1.15'
+pin_run_as_build:
+  libiconv:
+    max_pin: x.x
+  python:
+    min_pin: x.x
+    max_pin: x.x
+python:
+- '3.8'
