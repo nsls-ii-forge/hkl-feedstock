@@ -6,6 +6,8 @@ cdt_name:
   - cos6
 gsl:
   - 2.4
+libiconv:
+  - 1.15
 c_compiler_version:    # [linux]
   - 7                  # [linux]
 cxx_compiler_version:  # [linux]
