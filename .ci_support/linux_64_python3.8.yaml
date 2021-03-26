@@ -15,9 +15,9 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-comp7
 glib:
-- '2'
+- '2.63'
 gsl:
-- '2.6'
+- '2.4'
 libiconv:
 - '1.16'
 pcre:

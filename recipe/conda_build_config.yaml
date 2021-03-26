@@ -4,6 +4,10 @@ channel_targets:
   - nsls2forge main
 cdt_name:
   - cos6
+gsl:
+  - 2.4
+glib:
+  - 2.63
 c_compiler_version:    # [linux]
   - 7                  # [linux]
 cxx_compiler_version:  # [linux]
